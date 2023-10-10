@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .align-element {
+    @apply mx-auto max-w-6xl px-8;
+  }
+}
+
+.linkStyles {
+  @apply inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors;
+}
+.linkStylesMobile {
+  @apply inline-flex h-10 w-9/12 items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors;
+}
+.active {
+  @apply text-blue-500 disabled:opacity-50 bg-accent;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
